@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b14" />
+  <meta name="description" content="A cinematic birthday surprise made especially for a legendary streamer." />
+  <title>Project LEGEND | Birthday Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Project Legend home"><span class="brand-mark">✦</span> PROJECT <b>LEGEND</b></a>
+    <span class="top-note">A SPECIAL TRANSMISSION · BIRTHDAY EDITION</span>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> CLASSIFIED: BIRTHDAY MISSION</p>
+        <p class="overline">ONE STREAMER. COUNTLESS MEMORIES.</p>
+        <h1>THE<br /><span>LEGEND</span></h1>
+        <div class="edition">BIRTHDAY <span>EDITION</span></div>
+        <p class="hero-text">Every legend deserves a moment in the spotlight.<br />Today, this one is all yours.</p>
+        <button class="primary-button" id="unlockBtn">UNLOCK YOUR SURPRISE <span aria-hidden="true">↗</span></button>
+        <p class="tiny-note">Made with appreciation, just for you.</p>
+      </div>
+      <div class="portrait-wrap">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img id="streamerPhoto" src="assets/streamer.jpg" alt="Streamer portrait" />
+          <div class="photo-fallback" id="photoFallback"><span>YOUR</span><strong>HERO</strong><small>Add his photo as assets/streamer.jpg</small></div>
+        </div>
+        <div class="portrait-label"><span class="label-icon">✦</span><span><small>PLAYER PROFILE</small><strong id="profileName">YOUR STREAMER</strong></span></div>
+        <div class="corner corner-tl"></div><div class="corner corner-br"></div>
+      </div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="journey section-shell" id="journey">
+      <div class="section-heading"><p class="eyebrow">CHAPTER 01 / THE JOURNEY</p><h2>THE STORY IS <span>STILL UNWRITTEN.</span></h2><p>Every stream, every laugh, every late-night game — they all make up the legend.</p></div>
+      <div class="memory-grid">
+        <article class="memory-card"><div class="card-number">01</div><div class="memory-symbol">◈</div><h3>EPIC STREAMS</h3><p>For the moments that brought everyone together.</p></article>
+        <article class="memory-card featured"><div class="card-number">02</div><div class="memory-symbol">✦</div><h3>LEGENDARY MOMENTS</h3><p>For the clutch plays, the funny fails, and the stories we keep retelling.</p></article>
+        <article class="memory-card"><div class="card-number">03</div><div class="memory-symbol">⌘</div><h3>THE COMMUNITY</h3><p>For every viewer, teammate, and friend cheering you on.</p></article>
+      </div>
+    </section>
+
+    <section class="message-section section-shell" id="message">
+      <div class="message-panel">
+        <div class="panel-glow"></div>
+        <p class="eyebrow">CHAPTER 02 / A MESSAGE FOR YOU</p>
+        <div class="quote-mark">“</div>
+        <h2>YOUR NEXT CHAPTER<br /><span>STARTS NOW.</span></h2>
+        <p class="message-intro">A little message from someone who is cheering for you, even from far away.</p>
+        <button class="secondary-button" id="messageBtn">OPEN YOUR MESSAGE <span>✦</span></button>
+        <div class="personal-message hidden" id="personalMessage" aria-live="polite">
+          <p id="customMessage">Happy Birthday! I hope this new chapter brings you happiness, good health, success, and countless beautiful memories. Keep being yourself, keep growing, and keep sharing your passion with the world. May Allah guide you, protect you, bless your efforts, and put barakah in your time and goals. Ameen. 🎂🎮</p>
+          <p class="signoff">— From someone wishing you the very best ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dua-section section-shell">
+      <div class="crescent" aria-hidden="true">☾</div>
+      <p class="eyebrow">CHAPTER 03 / A DU’A FOR YOUR NEXT CHAPTER</p>
+      <h2>May your year be filled with <span>barakah.</span></h2>
+      <p class="dua-text">May Allah bless your life, protect you from harm, grant you success in what is good for you, strengthen your iman, and bring peace to your heart. May He make your efforts meaningful and your future full of khayr. Ameen.</p>
+      <div class="dua-stars" aria-hidden="true">✧　✦　✧</div>
+    </section>
+
+    <section class="finale section-shell" id="finale">
+      <p class="eyebrow">MISSION STATUS: COMPLETE</p>
+      <h2>ANOTHER YEAR.<br /><span>ANOTHER LEGEND.</span></h2>
+      <p>Keep dreaming. Keep creating. Keep leveling up.</p>
+      <button class="primary-button replay-button" id="replayBtn">REPLAY THE SURPRISE ↻</button>
+    </section>
+  </main>
+  <footer><span>PROJECT LEGEND</span><span>BUILT WITH ♥ AND GOOD WISHES</span><span>END TRANSMISSION ✦</span></footer>
+
+  <div class="modal hidden" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card"><button class="close-modal" id="closeModal" aria-label="Close">×</button><div class="modal-spark">✦</div><p class="eyebrow">TRANSMISSION RECEIVED</p><h2 id="modalTitle">HAPPY BIRTHDAY,<br /><span>LEGEND!</span></h2><p>Today is your reminder that your story matters — and the best chapters may still be ahead.</p><button class="primary-button" id="goMessageBtn">CONTINUE YOUR MISSION ↓</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
